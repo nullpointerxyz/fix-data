@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const bgColor = bgcolortInput.value;
         const textColor = textcolorInput.value;
         const format = getSelectedFormat();
-        const targetSizeKB = parseInt(targetSizeInput.value);
+        const targetSizeMB = parseFloat(targetSizeInput.value);
 
         let text = textInput.value;
         if (!text) {
@@ -90,8 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
             let finalBlob = blob;
 
             // 如果要求指定大小，且当前生成的大小未达到
-            if (targetSizeKB && targetSizeKB > 0) {
-                const targetBytes = targetSizeKB * 1024;
+            if (targetSizeMB && targetSizeMB > 0) {
+                const targetBytes = Math.floor(targetSizeMB * 1024 * 1024);
                 if (targetBytes > blob.size) {
                     const paddingSize = targetBytes - blob.size;
                     // 生成全零字节进行填充
