@@ -202,31 +202,33 @@
         <!-- 工具2：ToString → JSON -->
         <div class="tool-panel" id="tool-tostring-json">
             <simulated-window>
-                <div class="input-section">
-                    <label for="ts-input">Java toString 输入 <span class="badge">Source</span></label>
-                    <textarea id="ts-input"
-                        placeholder="粘贴 Java toString 输出，例如：&#10;User(id=1, name=张三, address=Address(city=北京, zip=100000))"></textarea>
-                </div>
-
-                <div class="action-section">
+                <div class="action-section" style="margin-bottom: 1rem;">
                     <button id="ts-transform-btn" class="primary-btn">
                         <span class="icon">⚡</span> 转换为 JSON
                     </button>
                 </div>
 
-                <div class="output-section">
-                    <div class="output-header">
-                        <label for="ts-output">JSON 结果 <span class="badge success">Result</span></label>
-                        <button class="icon-btn tooltip copy-btn" data-target="ts-output" data-tooltip="复制内容">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                            </svg>
-                        </button>
+                <div class="split-layout">
+                    <div class="input-section">
+                        <label for="ts-input">Java toString 输入 <span class="badge">Source</span></label>
+                        <textarea id="ts-input"
+                            placeholder="粘贴 Java toString 输出，例如：&#10;User(id=1, name=张三, address=Address(city=北京, zip=100000))"></textarea>
                     </div>
-                    <textarea id="ts-output" readonly placeholder="JSON 结果将显示在这里..."></textarea>
+
+                    <div class="output-section">
+                        <div class="output-header">
+                            <label for="ts-output">JSON 结果 <span class="badge success">Result</span></label>
+                            <button class="icon-btn tooltip copy-btn" data-target="ts-output" data-tooltip="复制内容">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <textarea id="ts-output" readonly placeholder="JSON 结果将显示在这里..."></textarea>
+                    </div>
                 </div>
             </simulated-window>
         </div>
@@ -234,12 +236,7 @@
         <!-- 工具3：JSON 格式化 -->
         <div class="tool-panel" id="tool-json-format">
             <simulated-window>
-                <div class="input-section">
-                    <label for="jf-input">JSON 输入 <span class="badge">Source</span></label>
-                    <textarea id="jf-input" placeholder="粘贴需要格式化的 JSON 字符串..."></textarea>
-                </div>
-
-                <div class="action-section">
+                <div class="action-section" style="margin-bottom: 1rem;">
                     <button id="jf-format-btn" class="primary-btn">
                         <span class="icon">✨</span> 格式化
                     </button>
@@ -248,19 +245,26 @@
                     </button>
                 </div>
 
-                <div class="output-section">
-                    <div class="output-header">
-                        <label for="jf-output">格式化结果 <span class="badge success">Result</span></label>
-                        <button class="icon-btn tooltip copy-btn" data-target="jf-output" data-tooltip="复制内容">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                            </svg>
-                        </button>
+                <div class="split-layout">
+                    <div class="input-section">
+                        <label for="jf-input">JSON 输入 <span class="badge">Source</span></label>
+                        <textarea id="jf-input" placeholder="粘贴需要格式化的 JSON 字符串..."></textarea>
                     </div>
-                    <textarea id="jf-output" readonly placeholder="结果将显示在这里..."></textarea>
+
+                    <div class="output-section">
+                        <div class="output-header">
+                            <label for="jf-output">格式化结果 <span class="badge success">Result</span></label>
+                            <button class="icon-btn tooltip copy-btn" data-target="jf-output" data-tooltip="复制内容">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <textarea id="jf-output" readonly placeholder="结果将显示在这里..."></textarea>
+                    </div>
                 </div>
             </simulated-window>
         </div>

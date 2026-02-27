@@ -895,3 +895,30 @@ textarea:focus {
     min-height: 250px;
   }
 }
+/* ========== Split Layout ========== */
+.split-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.split-layout .input-section,
+.split-layout .output-section {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.split-layout textarea {
+  flex: 1;
+  min-height: 400px;
+}
+
+@media (max-width: 800px) {
+  .split-layout {
+    grid-template-columns: 1fr;
+  }
+  .split-layout textarea {
+    min-height: 200px;
+  }
+}
