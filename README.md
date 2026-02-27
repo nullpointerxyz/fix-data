@@ -20,7 +20,7 @@ Data Transformer 是一款基于纯前端技术实现的高效、优雅的数据
 10. **📏 字符统计**：实时统计输入文本中的中英文字符、数字、全角/半角符号，及字节占用长度（UTF-8 或 GBK 估算）。
 11. **🖼️ 占位图生成**：支持指定宽、高、颜色以及精准的**目标文件大小**(填充全零无用字节以“撑大”体积)的占位图片快速生成与下载保存。
 12. **🔢 ID 数据校验**：针对长串逗号分隔的数字 ID 提供即时查错与高亮提醒，可一键提取出所有有效 ID、过滤乱码并去重，杜绝传参错乱。
-13. **🌍 谷歌翻译**：内置 Google 翻译直链通道入口，辅助阅读文档。
+13. **🗃️ SQL 格式化**：基于 sql-formatter 库，支持 15 种 SQL 方言（MySQL、PostgreSQL、SQLite、SQL Server 等），提供关键字大小写转换、缩进风格配置及 SQL 压缩功能。
 
 ## 📂 目录结构
 
@@ -62,5 +62,6 @@ docker run -d -p 80:80 --name fix-data fix-data:latest
 ## 🔧 技术选型
 
 *   **框架**: 纯原生实现 (`Vanilla JS` + `HTML5` + `CSS3`)，无第三方重型框架。
+*   **SQL 格式化**: [sql-formatter](https://github.com/sql-formatter-org/sql-formatter) (CDN 引入)。
 *   **设计**: 玻璃拟物UI (Glassmorphism)、暗阶高级配色风格、CSS 平滑微动画补间。
 *   **状态存储**: 浏览器原生 `localStorage` 持久缓存。
