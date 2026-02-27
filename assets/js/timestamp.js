@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     const stampInput = document.getElementById('ts-stamp-input');
     const tsResult = document.getElementById('ts-result');
     const convertBtn = document.getElementById('ts-convert-btn');

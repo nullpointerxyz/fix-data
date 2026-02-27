@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     const tsInput = document.getElementById('ts-input');
     const tsOutput = document.getElementById('ts-output');
     const tsTransformBtn = document.getElementById('ts-transform-btn');

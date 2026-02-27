@@ -1,0 +1,33 @@
+            <simulated-window>
+                <div class="action-section" style="margin-bottom: 1rem;">
+                    <button id="jf-format-btn" class="primary-btn">
+                        <span class="icon">✨</span> 格式化
+                    </button>
+                    <button id="jf-minify-btn" class="primary-btn secondary">
+                        <span class="icon">📦</span> 压缩
+                    </button>
+                </div>
+
+                <div class="split-layout">
+                    <div class="input-section">
+                        <label for="jf-input">JSON 输入 <span class="badge">Source</span></label>
+                        <textarea id="jf-input" placeholder="粘贴需要格式化的 JSON 字符串..."></textarea>
+                    </div>
+
+                    <div class="output-section">
+                        <div class="output-header">
+                            <label for="jf-output">格式化结果 <span class="badge success">Result</span></label>
+                            <button class="icon-btn tooltip copy-btn" data-target="jf-output" data-tooltip="复制内容">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <textarea id="jf-output" readonly placeholder="结果将显示在这里..."></textarea>
+                    </div>
+                </div>
+            </simulated-window>
+        

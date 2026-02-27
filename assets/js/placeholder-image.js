@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     // 获取 DOM 元素
     const widthInput = document.getElementById('ph-width');
     const heightInput = document.getElementById('ph-height');

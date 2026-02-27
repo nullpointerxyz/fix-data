@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     const encInput = document.getElementById('enc-input');
     const encOutput = document.getElementById('enc-output');
 

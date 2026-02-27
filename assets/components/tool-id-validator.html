@@ -1,0 +1,49 @@
+            <simulated-window>
+                <div class="input-section">
+                    <label for="idval-input">长串数字 ID 输入区 (以逗号分隔) <span class="badge">Source</span></label>
+                    <textarea id="idval-input" placeholder="请在这里粘贴以逗号分隔的数字 ID。&#10;例如: 1001, 1002, 10A3, 1004,,1005..."
+                        style="min-height: 120px;"></textarea>
+                </div>
+
+                <div class="controls-section">
+                    <div class="control-group" style="width: 100%;">
+                        <h3>容错与校验设置</h3>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" id="idval-allow-space" checked>
+                                <span class="checkmark"></span>
+                                <span>允许数字前后含各种空格/换行</span>
+                            </label>
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" id="idval-allow-cn-comma" checked>
+                                <span class="checkmark"></span>
+                                <span>允许误用中文逗号 (，) 混搭</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <button id="idval-check-btn" class="primary-btn">
+                        <span class="icon">🔍</span> 开始校验纠错
+                    </button>
+                    <button id="idval-fix-btn" class="primary-btn secondary">
+                        <span class="icon">✨</span> 自动清洗并提取数字
+                    </button>
+                </div>
+
+                <div class="output-section">
+                    <label>错误诊断报告 <span class="badge success">Report</span></label>
+                    <div id="idval-report-stats" style="margin-bottom: 1rem; color: var(--text-secondary);">等待输入内容并校验...
+                    </div>
+
+                    <div id="idval-highlight-area" class="notepad-textarea"
+                        style="height: auto; min-height: 150px; white-space: pre-wrap; word-break: break-all; overflow-y: auto; background: var(--bg-secondary); padding: 1rem; border-radius: 8px; font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; line-height: 1.5; color: var(--text-main);">
+                        <span style="color: var(--text-secondary);">分析的高亮诊断内容将显示在此处...</span>
+                    </div>
+
+                    <div id="idval-error-list"
+                        style="margin-top: 1rem; color: #ff4d4f; font-size: 0.95rem; line-height: 1.8;"></div>
+                </div>
+            </simulated-window>
+        

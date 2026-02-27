@@ -1,0 +1,87 @@
+            <simulated-window>
+                <div class="ts-now-bar">
+                    <span>当前时间戳</span>
+                    <span class="ts-now-value" id="ts-now-ms">—</span>
+                    <span class="ts-now-label">ms</span>
+                    <span class="ts-now-value" id="ts-now-s">—</span>
+                    <span class="ts-now-label">s</span>
+                </div>
+
+                <div class="input-section">
+                    <label for="ts-stamp-input">时间戳 <span class="badge">Source</span></label>
+                    <input type="text" id="ts-stamp-input" class="text-input"
+                        placeholder="输入时间戳，如 1707724800000 或 1707724800">
+                </div>
+
+                <div class="controls-section">
+                    <div class="control-group">
+                        <h3>输入类型</h3>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="ts-unit" value="auto" checked>
+                            <span class="radio-mark"></span>
+                            <span>自动识别</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="ts-unit" value="ms">
+                            <span class="radio-mark"></span>
+                            <span>毫秒 (ms)</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="ts-unit" value="s">
+                            <span class="radio-mark"></span>
+                            <span>秒 (s)</span>
+                        </label>
+                    </div>
+
+                    <div class="control-group">
+                        <h3>日期格式</h3>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="ts-format" value="yyyy-MM-dd HH:mm:ss" checked>
+                            <span class="radio-mark"></span>
+                            <span>yyyy-MM-dd HH:mm:ss</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="ts-format" value="yyyy/MM/dd HH:mm:ss">
+                            <span class="radio-mark"></span>
+                            <span>yyyy/MM/dd HH:mm:ss</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="ts-format" value="yyyy-MM-dd">
+                            <span class="radio-mark"></span>
+                            <span>yyyy-MM-dd</span>
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="ts-format" value="custom">
+                            <span class="radio-mark"></span>
+                            <span>自定义</span>
+                        </label>
+                        <input type="text" id="ts-custom-format" class="inline-input" style="width:200px;margin-top:4px"
+                            placeholder="如 MM/dd/yyyy HH:mm" disabled>
+                    </div>
+                </div>
+
+                <div class="action-section">
+                    <button id="ts-convert-btn" class="primary-btn">
+                        <span class="icon">⚡</span> 转换
+                    </button>
+                    <button id="ts-reverse-btn" class="primary-btn secondary">
+                        <span class="icon">🔄</span> 日期 → 时间戳
+                    </button>
+                </div>
+
+                <div class="output-section">
+                    <div class="output-header">
+                        <label for="ts-result">转换结果 <span class="badge success">Result</span></label>
+                        <button class="icon-btn tooltip copy-btn" data-target="ts-result" data-tooltip="复制内容">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <textarea id="ts-result" readonly placeholder="结果将显示在这里..."></textarea>
+                </div>
+            </simulated-window>
+        

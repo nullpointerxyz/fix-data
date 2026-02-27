@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     const input = document.getElementById('sl-input');
     if (!input) return;
 

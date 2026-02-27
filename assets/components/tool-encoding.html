@@ -1,0 +1,33 @@
+            <simulated-window>
+                <div class="input-section">
+                    <label for="enc-input">输入文本 <span class="badge">Source</span></label>
+                    <textarea id="enc-input" placeholder="输入需要编码/解码的文本..."></textarea>
+                </div>
+
+                <div class="encoding-actions">
+                    <button id="enc-base64-encode" class="primary-btn">Base64 编码</button>
+                    <button id="enc-base64-decode" class="primary-btn secondary">Base64 解码</button>
+                    <button id="enc-url-encode" class="primary-btn">URL 编码</button>
+                    <button id="enc-url-decode" class="primary-btn secondary">URL 解码</button>
+                    <button id="enc-unicode-encode" class="primary-btn">Unicode 编码</button>
+                    <button id="enc-unicode-decode" class="primary-btn secondary">Unicode 解码</button>
+                    <button id="enc-html-encode" class="primary-btn">HTML 编码</button>
+                    <button id="enc-html-decode" class="primary-btn secondary">HTML 解码</button>
+                </div>
+
+                <div class="output-section">
+                    <div class="output-header">
+                        <label for="enc-output">转换结果 <span class="badge success">Result</span></label>
+                        <button class="icon-btn tooltip copy-btn" data-target="enc-output" data-tooltip="复制内容">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <textarea id="enc-output" readonly placeholder="结果将显示在这里..."></textarea>
+                </div>
+            </simulated-window>
+        

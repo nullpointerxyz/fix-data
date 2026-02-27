@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     const jfInput = document.getElementById('jf-input');
     const jfOutput = document.getElementById('jf-output');
     const jfFormatBtn = document.getElementById('jf-format-btn');

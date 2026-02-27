@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     const inputArea = document.getElementById('idval-input');
     const allowSpaceCheckbox = document.getElementById('idval-allow-space');
     const allowCnCommaCheckbox = document.getElementById('idval-allow-cn-comma');

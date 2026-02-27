@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     // 初始化选项卡设置
     const tabBtns = document.querySelectorAll('.tab-btn');
     const toolPanels = document.querySelectorAll('.tool-panel');

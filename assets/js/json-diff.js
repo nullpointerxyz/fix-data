@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     const jdLeft = document.getElementById('jd-left');
     const jdRight = document.getElementById('jd-right');
     const jdCompareBtn = document.getElementById('jd-compare-btn');

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     const textareas = [
         document.getElementById('cb-1'),
         document.getElementById('cb-2'),

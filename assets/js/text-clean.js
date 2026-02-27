@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     const inputData = document.getElementById('input-data');
     const outputData = document.getElementById('output-data');
     const inputStats = document.getElementById('input-stats');

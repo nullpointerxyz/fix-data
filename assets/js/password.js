@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('app-components-loaded', () => {
     const pwUpper = document.getElementById('pw-upper');
     const pwLower = document.getElementById('pw-lower');
     const pwDigit = document.getElementById('pw-digit');
