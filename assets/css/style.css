@@ -911,7 +911,7 @@ textarea:focus {
 
 .split-layout textarea {
   flex: 1;
-  min-height: 400px;
+  min-height: calc(100vh - 320px);
 }
 
 @media (max-width: 800px) {
