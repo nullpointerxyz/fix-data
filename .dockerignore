@@ -1,4 +1,7 @@
 .idea
 .git
 .dockerignore
+.gitignore
 Dockerfile
+deploy_docker.sh
+README.md
