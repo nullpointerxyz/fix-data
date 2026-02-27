@@ -44,6 +44,7 @@
             <button class="tab-btn" data-tool="placeholder-img">🖼️ 占位图生成</button>
             <button class="tab-btn" data-tool="id-validator">🔢 ID 数据校验</button>
             <button class="tab-btn" data-tool="translate">🌍 谷歌翻译</button>
+            <button class="tab-btn" data-tool="sql-format">🗃️ SQL 格式化</button>
         </nav>
 
         <!-- 工具1：文本清洗 -->
@@ -77,13 +78,17 @@
         <div class="tool-panel" id="tool-strlen" data-include="assets/components/tool-strlen.html"></div>
 
         <!-- 工具12：占位图生成 -->
-        <div class="tool-panel" id="tool-placeholder-img" data-include="assets/components/tool-placeholder-img.html"></div>
+        <div class="tool-panel" id="tool-placeholder-img" data-include="assets/components/tool-placeholder-img.html">
+        </div>
 
         <!-- 工具13：ID 格式校验 -->
         <div class="tool-panel" id="tool-id-validator" data-include="assets/components/tool-id-validator.html"></div>
 
         <!-- 工具10：谷歌翻译 -->
         <div class="tool-panel" id="tool-translate" data-include="assets/components/tool-translate.html"></div>
+
+        <!-- 工具14：SQL 格式化 -->
+        <div class="tool-panel" id="tool-sql-format" data-include="assets/components/tool-sql-format.html"></div>
     </main>
 
     <!-- 设置弹窗 -->
@@ -103,6 +108,7 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/sql-formatter@15/dist/sql-formatter.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/text-clean.js"></script>
     <script src="assets/js/tostring-json.js"></script>
@@ -115,6 +121,7 @@
     <script src="assets/js/strlen.js"></script>
     <script src="assets/js/placeholder-image.js"></script>
     <script src="assets/js/id-validator.js"></script>
+    <script src="assets/js/sql-format.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {

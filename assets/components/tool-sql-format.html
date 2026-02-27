@@ -1,0 +1,71 @@
+            <simulated-window>
+                <div class="action-section" style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                    <button id="sf-format-btn" class="primary-btn">
+                        <span class="icon">✨</span> 格式化
+                    </button>
+                    <button id="sf-minify-btn" class="primary-btn secondary">
+                        <span class="icon">📦</span> 压缩
+                    </button>
+
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <label for="sf-language" style="font-size: 0.85rem; color: var(--text-secondary); white-space: nowrap;">方言</label>
+                        <select id="sf-language" class="select-input">
+                            <option value="sql">SQL (标准)</option>
+                            <option value="mysql" selected>MySQL</option>
+                            <option value="postgresql">PostgreSQL</option>
+                            <option value="sqlite">SQLite</option>
+                            <option value="transactsql">SQL Server</option>
+                            <option value="bigquery">BigQuery</option>
+                            <option value="spark">Spark SQL</option>
+                            <option value="hive">Hive</option>
+                            <option value="trino">Trino</option>
+                            <option value="redshift">Redshift</option>
+                            <option value="db2">DB2</option>
+                            <option value="snowflake">Snowflake</option>
+                            <option value="plsql">PL/SQL</option>
+                            <option value="mariadb">MariaDB</option>
+                            <option value="singlestoredb">SingleStoreDB</option>
+                        </select>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <label for="sf-keyword-case" style="font-size: 0.85rem; color: var(--text-secondary); white-space: nowrap;">关键字</label>
+                        <select id="sf-keyword-case" class="select-input">
+                            <option value="preserve">保持原样</option>
+                            <option value="upper" selected>大写</option>
+                            <option value="lower">小写</option>
+                        </select>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <label for="sf-tab-width" style="font-size: 0.85rem; color: var(--text-secondary); white-space: nowrap;">缩进</label>
+                        <select id="sf-tab-width" class="select-input">
+                            <option value="2" selected>2 空格</option>
+                            <option value="4">4 空格</option>
+                            <option value="tab">Tab</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="split-layout">
+                    <div class="input-section">
+                        <label for="sf-input">SQL 输入 <span class="badge">Source</span></label>
+                        <textarea id="sf-input" placeholder="粘贴需要格式化的 SQL 语句...&#10;&#10;示例: SELECT u.id, u.name, COUNT(o.id) AS order_count FROM users u LEFT JOIN orders o ON u.id = o.user_id WHERE u.status = 1 GROUP BY u.id HAVING order_count > 5 ORDER BY order_count DESC LIMIT 10"></textarea>
+                    </div>
+
+                    <div class="output-section">
+                        <div class="output-header">
+                            <label for="sf-output">格式化结果 <span class="badge success">Result</span></label>
+                            <button class="icon-btn tooltip copy-btn" data-target="sf-output" data-tooltip="复制内容">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <textarea id="sf-output" readonly placeholder="结果将显示在这里..."></textarea>
+                    </div>
+                </div>
+            </simulated-window>
